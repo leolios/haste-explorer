@@ -1,0 +1,7 @@
+{{#if servers}}
+    {{#each servers}}
+        <li><a onclick="loadServer({{this.id}})" class="waves-effect">{{this.name}}</a></li>
+    {{/each}}
+{{else}}
+    <li><a class="waves-effect">Oh :c Nothing ...</a></li>
+{{/if}}

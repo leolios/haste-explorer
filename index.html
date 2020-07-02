@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Haste Viewer</title>
+
+    <!-- Include CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/solarized_dark.css">
+
+    <!-- Include JS -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.1/build/highlight.min.js"></script>
+</head>
+<body>
+    <!-- Application -->
+    <ul id="slide-out" class="sidenav">
+        <li><a class="subheader">Server List</a></li>
+        <div id="server-list"></div>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect" onclick="openModal.addServer()" href="#!">Manual add server</a></li>
+        <li><a class="waves-effect" href="#!">Explore</a></li>
+        <li><a class="waves-effect" href="#!">Share</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-medium-and-up"><i class="material-icons white-text">menu</i></a>
+            <p>Server : <span class="serverName"></span> | <span class="fileName"></span> </p>
+        </div>
+    </nav>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li><a onclick="docu.save()" class="btn-floating red tooltipped" data-position="left" data-tooltip="Save file"><i class="material-icons">save</i></a></li>
+            <li><a onclick="docu.new()" class="btn-floating yellow darken-1 tooltipped" data-position="left" data-tooltip="New file"><i class="material-icons">add_circle_outline</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+    <br>
+    <div id="linenos">&gt;</div>
+    <span id="viewCode">
+        <textarea spellcheck="false" style="display: inline-block;"></textarea>
+    </span>
+</body>
+    <!-- Include App JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+<div id="modal" class="modal"></div>
+</html>
+
+
