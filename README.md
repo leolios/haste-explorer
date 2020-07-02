@@ -35,4 +35,4 @@ If you wish to contribute, read the CONTRIBUTING.md file to find out how to do s
 
 ### License
 
-This project is under license `Coucou` see the LICENSE.md file for more information.
+This project is under `MIT License`. See the LICENSE file for more information.
