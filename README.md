@@ -12,7 +12,7 @@ It will contain a file version manager, a list of the files you have created (pe
 
 ### Prerequisite
 
-* **Your brain**, you can host or locally access the client ( or just open [this link](github page projet) )
+* **Your brain**, you can host or locally access the client ( or just open [this link](https://aomitsu.github.io/haste-explorer/) )
 
 ### Build With
 
